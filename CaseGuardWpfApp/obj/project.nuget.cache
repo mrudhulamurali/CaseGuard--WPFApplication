@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "JU69Hm4imBXEv0E+qh4aHB9i443HRSkHeXpucZuL3rNE8PzjX+2Tu5Wfz8TUY2+NLh/lruYHvIDDPRz09VPHXA==",
+  "success": true,
+  "projectFilePath": "C:\\Masters\\DistributedInformationSystem\\LinkednCourse\\Applications\\CaseGuardWpfApp\\CaseGuardWpfApp\\CaseGuardWpfApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mrudh\\.nuget\\packages\\extended.wpf.toolkit\\4.1.0\\extended.wpf.toolkit.4.1.0.nupkg.sha512",
+    "C:\\Users\\mrudh\\.nuget\\packages\\nlog\\4.7.10\\nlog.4.7.10.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Extended.Wpf.Toolkit 4.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Extended.Wpf.Toolkit",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

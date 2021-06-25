@@ -1,0 +1,29 @@
+﻿<Window x:Class="CaseGuardWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CaseGuardWpfApp" xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="CaseGuardWindow" Height="450" Width="800">
+    <Grid >
+        <Canvas Name="paintArea"  MouseMove="paintArea_MouseMove" Margin="28,25,0,32" 
+                    Cursor="Pen" HorizontalAlignment="Left" Width="624" >
+            <Image Width="604" Height="383" Canvas.Left="10" Canvas.Top="10" Name="imgPhoto"
+        Stretch="Fill" />
+        </Canvas>
+        <Button  HorizontalAlignment="Left"
+        Margin="659,0,0,356" Name="btnLoad" VerticalAlignment="Bottom"
+        Width="94" Click="btnLoad_Click">Load Image</Button>
+
+        <xctk:ColorPicker SelectedColor="Black" HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="ClrPcker_Background" SelectedColorChanged="ClrPcker_Background_SelectedColorChanged" Margin="659,0,0,274" Height="27" Width="94"  />
+        <Label Grid.Row="0" HorizontalAlignment="Left" Margin="659,89,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.647,1.604" Height="28" Width="94" Content="Pick a Color" FontWeight="Bold"/>
+        <Slider Name="Slider" AutoToolTipPlacement="TopLeft" AutoToolTipPrecision="0" HorizontalAlignment="Left" Margin="659,217,0,0" VerticalAlignment="Top" Width="94" Maximum="20" ValueChanged="Slider_ValueChanged"/>
+        <Label Grid.Row="0" HorizontalAlignment="Left" Margin="659,89,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.647,1.604" Height="28" Width="94" Content="Pick a Color" FontWeight="Bold"/>
+        <Label Content="Spray Thickness" HorizontalAlignment="Left" Margin="659,183,0,0" VerticalAlignment="Top" Width="105" FontWeight="Bold"/>
+        <Button Content="Erase" HorizontalAlignment="Left" Margin="659,290,0,0" VerticalAlignment="Top" Width="94" Click="Erase_Click"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="659,325,0,0" VerticalAlignment="Top" Width="94" Click="Save_Click"/>
+        <Button Content="Draw" HorizontalAlignment="Left" Margin="659,255,0,0" VerticalAlignment="Top" Width="94" Click="Draw_Click_"/>
+
+    </Grid>
+</Window>
